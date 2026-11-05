@@ -1,0 +1,1041 @@
+[
+    {
+        "key": "post_type_tmc_accessories_frames",
+        "title": "Accessories and Frames",
+        "menu_order": 0,
+        "active": true,
+        "post_type": "accessories-frames",
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "allow_ai_access": false,
+        "ai_description": "",
+        "labels": {
+            "name": "Accessories and Frames",
+            "singular_name": "Accessory or Frame",
+            "menu_name": "Accessories and Frames"
+        },
+        "description": "",
+        "public": true,
+        "hierarchical": false,
+        "exclude_from_search": false,
+        "publicly_queryable": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "admin_menu_parent": "",
+        "show_in_admin_bar": true,
+        "show_in_nav_menus": true,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp/v2",
+        "rest_controller_class": "WP_REST_Posts_Controller",
+        "menu_position": 21,
+        "menu_icon": {
+            "type": "dashicons",
+            "value": "dashicons-admin-tools"
+        },
+        "rename_capabilities": false,
+        "singular_capability_name": "post",
+        "plural_capability_name": "posts",
+        "supports": [
+            "title",
+            "editor",
+            "thumbnail",
+            "excerpt",
+            "custom-fields",
+            "revisions"
+        ],
+        "taxonomies": [],
+        "has_archive": true,
+        "has_archive_slug": "",
+        "rewrite": {
+            "permalink_rewrite": "post_type_key",
+            "slug": "",
+            "with_front": false,
+            "feeds": false,
+            "pages": true
+        },
+        "query_var": "post_type_key",
+        "query_var_name": "",
+        "can_export": true,
+        "delete_with_user": false,
+        "register_meta_box_cb": "",
+        "enter_title_here": ""
+    },
+    {
+        "key": "post_type_tmc_mats",
+        "title": "Mats",
+        "menu_order": 0,
+        "active": true,
+        "post_type": "mats",
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "allow_ai_access": false,
+        "ai_description": "",
+        "labels": {
+            "name": "Mats",
+            "singular_name": "Mat",
+            "menu_name": "Mats"
+        },
+        "description": "",
+        "public": true,
+        "hierarchical": false,
+        "exclude_from_search": false,
+        "publicly_queryable": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "admin_menu_parent": "",
+        "show_in_admin_bar": true,
+        "show_in_nav_menus": true,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp/v2",
+        "rest_controller_class": "WP_REST_Posts_Controller",
+        "menu_position": 21,
+        "menu_icon": {
+            "type": "dashicons",
+            "value": "dashicons-grid-view"
+        },
+        "rename_capabilities": false,
+        "singular_capability_name": "post",
+        "plural_capability_name": "posts",
+        "supports": [
+            "title",
+            "editor",
+            "thumbnail",
+            "excerpt",
+            "custom-fields",
+            "revisions"
+        ],
+        "taxonomies": [
+            "mat-categories"
+        ],
+        "has_archive": true,
+        "has_archive_slug": "",
+        "rewrite": {
+            "permalink_rewrite": "post_type_key",
+            "slug": "",
+            "with_front": false,
+            "feeds": false,
+            "pages": true
+        },
+        "query_var": "post_type_key",
+        "query_var_name": "",
+        "can_export": true,
+        "delete_with_user": false,
+        "register_meta_box_cb": "",
+        "enter_title_here": ""
+    },
+    {
+        "key": "taxonomy_tmc_mat_categories",
+        "title": "Mat Categories",
+        "menu_order": 0,
+        "active": true,
+        "taxonomy": "mat-categories",
+        "object_type": [
+            "mats"
+        ],
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "labels": {
+            "name": "Mat Categories",
+            "singular_name": "Mat Category",
+            "menu_name": "Mat Categories"
+        },
+        "description": "",
+        "capabilities": {
+            "manage_terms": "manage_categories",
+            "edit_terms": "manage_categories",
+            "delete_terms": "manage_categories",
+            "assign_terms": "edit_posts"
+        },
+        "public": true,
+        "publicly_queryable": true,
+        "hierarchical": false,
+        "show_ui": true,
+        "show_in_menu": true,
+        "show_in_nav_menus": true,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp/v2",
+        "rest_controller_class": "WP_REST_Terms_Controller",
+        "show_tagcloud": true,
+        "show_in_quick_edit": true,
+        "show_admin_column": true,
+        "rewrite": {
+            "permalink_rewrite": "taxonomy_key",
+            "slug": "",
+            "with_front": false,
+            "rewrite_hierarchical": false
+        },
+        "query_var": "taxonomy_key",
+        "query_var_name": "",
+        "default_term": {
+            "default_term_enabled": false,
+            "default_term_name": "",
+            "default_term_slug": "",
+            "default_term_description": ""
+        },
+        "sort": null,
+        "meta_box": "default",
+        "meta_box_cb": "",
+        "meta_box_sanitize_cb": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_tmc_accessory_details",
+        "title": "Accessory Details",
+        "fields": [
+            {
+                "key": "field_tmc_acc_summary",
+                "label": "Description",
+                "name": "tmc_summary",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "rows": 6,
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_tmc_acc_gallery",
+                "label": "Image gallery",
+                "name": "tmc_gallery_1",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "Use Add Media → Create Gallery. Images show as a grid with their titles as captions.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 0
+            },
+            {
+                "key": "field_tmc_acc_downloads",
+                "label": "Downloads",
+                "name": "tmc_downloads",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "One link per line. The link text becomes the button label.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "accessories-frames"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": "",
+        "show_in_rest": false,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_tmc_mat_details",
+        "title": "Mat Details",
+        "fields": [
+            {
+                "key": "field_tmc_tab_1",
+                "label": "Overview",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_tmc_summary",
+                "label": "Summary",
+                "name": "tmc_summary",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Intro shown under the mat name.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "rows": 4,
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_tmc_use",
+                "label": "Use",
+                "name": "tmc_use",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "e.g. Internal, Internal & External",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_tmc_mat_finder",
+                "label": "Mat Finder category",
+                "name": "tmc_mat_finder",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "e.g. A & C",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_tmc_tab_2",
+                "label": "Specifications",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_tmc_type",
+                "label": "Type",
+                "name": "tmc_type",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_tmc_height",
+                "label": "Height",
+                "name": "tmc_height",
+                "aria-label": "",
+                "type": "checkbox",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "6.5 mm": "6.5 mm",
+                    "8-9 mm": "8-9 mm",
+                    "10-11 mm": "10-11 mm",
+                    "12 mm": "12 mm",
+                    "16-18 mm": "16-18 mm",
+                    "20 mm": "20 mm",
+                    "22-25 mm": "22-25 mm"
+                },
+                "layout": "horizontal",
+                "return_format": "value",
+                "default_value": [],
+                "allow_custom": 0,
+                "save_custom": 0,
+                "toggle": 0,
+                "custom_choice_button_text": "Add new choice"
+            },
+            {
+                "key": "field_tmc_sizes",
+                "label": "Available sizes",
+                "name": "tmc_sizes",
+                "aria-label": "",
+                "type": "checkbox",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Manufactured to size": "Manufactured to size",
+                    "Mat in a box": "Mat in a box",
+                    "Can be cut on site": "Can be cut on site"
+                },
+                "layout": "horizontal",
+                "return_format": "value",
+                "default_value": [],
+                "allow_custom": 0,
+                "save_custom": 0,
+                "toggle": 0,
+                "custom_choice_button_text": "Add new choice"
+            },
+            {
+                "key": "field_tmc_insert",
+                "label": "Insert type",
+                "name": "tmc_insert",
+                "aria-label": "",
+                "type": "checkbox",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "External (rubber)": "External (rubber)",
+                    "External (brush)": "External (brush)",
+                    "Internal (premium water absorption Polyamide)": "Internal (premium water absorption Polyamide)",
+                    "Internal (Standard Polypropylene)": "Internal (Standard Polypropylene)",
+                    "Natural": "Natural"
+                },
+                "layout": "horizontal",
+                "return_format": "value",
+                "default_value": [],
+                "allow_custom": 0,
+                "save_custom": 0,
+                "toggle": 0,
+                "custom_choice_button_text": "Add new choice"
+            },
+            {
+                "key": "field_tmc_water_absorption",
+                "label": "Water absorption",
+                "name": "tmc_water_absorption",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "": "—",
+                    "1": "★",
+                    "2": "★★",
+                    "3": "★★★",
+                    "4": "★★★★",
+                    "5": "★★★★★"
+                },
+                "allow_null": 1,
+                "multiple": 0,
+                "default_value": false,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "create_options": 0,
+                "save_options": 0
+            },
+            {
+                "key": "field_tmc_design",
+                "label": "Design",
+                "name": "tmc_design",
+                "aria-label": "",
+                "type": "checkbox",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Anodised": "Anodised",
+                    "Logo available": "Logo available"
+                },
+                "layout": "horizontal",
+                "return_format": "value",
+                "default_value": [],
+                "allow_custom": 0,
+                "save_custom": 0,
+                "toggle": 0,
+                "custom_choice_button_text": "Add new choice"
+            },
+            {
+                "key": "field_tmc_fire_rating",
+                "label": "Fire rating",
+                "name": "tmc_fire_rating",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_tmc_wear",
+                "label": "Wear",
+                "name": "tmc_wear",
+                "aria-label": "",
+                "type": "checkbox",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Light Traffic": "Light Traffic",
+                    "Moderate Traffic": "Moderate Traffic",
+                    "Heavy Traffic": "Heavy Traffic",
+                    "Extreme Traffic": "Extreme Traffic"
+                },
+                "layout": "horizontal",
+                "return_format": "value",
+                "default_value": [],
+                "allow_custom": 0,
+                "save_custom": 0,
+                "toggle": 0,
+                "custom_choice_button_text": "Add new choice"
+            },
+            {
+                "key": "field_tmc_guarantee",
+                "label": "Guarantee",
+                "name": "tmc_guarantee",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_tmc_lead_time",
+                "label": "Lead time",
+                "name": "tmc_lead_time",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_tmc_supplier",
+                "label": "Supplier (internal, not shown)",
+                "name": "tmc_supplier",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_tmc_lifetime",
+                "label": "Expected lifetime (internal, not shown)",
+                "name": "tmc_lifetime",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "": "—",
+                    "1": "★",
+                    "2": "★★",
+                    "3": "★★★",
+                    "4": "★★★★",
+                    "5": "★★★★★"
+                },
+                "allow_null": 1,
+                "multiple": 0,
+                "default_value": false,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "create_options": 0,
+                "save_options": 0
+            },
+            {
+                "key": "field_tmc_cost",
+                "label": "Cost (internal, not shown)",
+                "name": "tmc_cost",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "": "—",
+                    "1": "★",
+                    "2": "★★",
+                    "3": "★★★",
+                    "4": "★★★★",
+                    "5": "★★★★★"
+                },
+                "allow_null": 1,
+                "multiple": 0,
+                "default_value": false,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "create_options": 0,
+                "save_options": 0
+            },
+            {
+                "key": "field_tmc_tab_3",
+                "label": "Design options",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_tmc_options_image",
+                "label": "Feature image",
+                "name": "tmc_options_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_tmc_gallery_1_heading",
+                "label": "Gallery 1 heading",
+                "name": "tmc_gallery_1_heading",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_tmc_gallery_1",
+                "label": "Gallery 1",
+                "name": "tmc_gallery_1",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "Use Add Media → Create Gallery. Images show as a grid with their titles as captions.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 0
+            },
+            {
+                "key": "field_tmc_gallery_2_heading",
+                "label": "Gallery 2 heading",
+                "name": "tmc_gallery_2_heading",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_tmc_gallery_2",
+                "label": "Gallery 2",
+                "name": "tmc_gallery_2",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "Use Add Media → Create Gallery. Images show as a grid with their titles as captions.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 0
+            },
+            {
+                "key": "field_tmc_gallery_3_heading",
+                "label": "Gallery 3 heading",
+                "name": "tmc_gallery_3_heading",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_tmc_gallery_3",
+                "label": "Gallery 3",
+                "name": "tmc_gallery_3",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "Use Add Media → Create Gallery. Images show as a grid with their titles as captions.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 0
+            },
+            {
+                "key": "field_tmc_tab_4",
+                "label": "Reference sites",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_tmc_reference_list",
+                "label": "Reference sites",
+                "name": "tmc_reference_list",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "Where this mat is installed. A simple list works best.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 0
+            },
+            {
+                "key": "field_tmc_reference_images",
+                "label": "Reference images",
+                "name": "tmc_reference_images",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "Use Add Media → Create Gallery. Images show as a grid with their titles as captions.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 0
+            },
+            {
+                "key": "field_tmc_tab_5",
+                "label": "Downloads",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_tmc_downloads",
+                "label": "Downloads",
+                "name": "tmc_downloads",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "One link per line. Use Add Media to upload a PDF and insert a link to it; the link text becomes the button label.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "mats"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": "",
+        "show_in_rest": false,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_tmc_page_options",
+        "title": "Page Options",
+        "fields": [
+            {
+                "key": "field_tmc_is_project",
+                "label": "Project case study",
+                "name": "tmc_is_project",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "Turn on for project pages. They then show under Projects in breadcrumbs and in the project lists. Also add the page to the Case Study template conditions.",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "ui": 1,
+                "default_value": 0,
+                "message": "",
+                "ui_on_text": "",
+                "ui_off_text": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": "",
+        "show_in_rest": false,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    }
+]
