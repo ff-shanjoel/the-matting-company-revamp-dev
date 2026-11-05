@@ -21,7 +21,7 @@ Everything is set in the dashboard. **Dashboard → Site Guide** shows this same
 | Project pages | Pages, edited in the normal editor (they use the Case Study template) |
 | Mats, accessories | Their own admin menus (ACF post types) |
 | Mat specs, colour galleries, reference sites, downloads | The **Mat Details** / **Accessory Details** boxes on each entry |
-| Mat Finder results | Each mat's **Mat Finder category** field, e.g. `A & C` |
+| Mat Finder results | Each mat's **Mat Finder category** tick boxes (A–F) |
 | Technical Information and Solutions tables | Built from the Mat Details fields |
 | Colours, fonts, reusable styles | Elementor global variables and classes (`tmc-*`) |
 | Menus | Appearance → Menus |
@@ -45,7 +45,7 @@ These keys and URLs are the same as on the live site.
 
 Field groups:
 
-- **Mat Details**: summary, use, Mat Finder category, specifications (height, sizes, insert, water absorption, design, fire rating, wear, guarantee, lead time), design option galleries, reference sites, downloads. Supplier, cost and expected lifetime are internal: they only show on the Solutions page.
+- **Mat Details**: summary, use, Mat Finder category (A–F tick boxes), specifications (height, sizes, insert, water absorption, design, fire rating, wear, guarantee, lead time), design option galleries, reference sites, downloads. Supplier, cost and expected lifetime are internal: they only show on the Solutions page.
 - **Accessory Details**: description, image gallery, downloads.
 - **Page Options**: the *Project case study* switch, which puts a page under Projects in the breadcrumbs.
 
@@ -66,7 +66,7 @@ These are Theme Builder templates; the IDs are WordPress post IDs.
 | Single Mat | 7510 | All mats |
 | Single Accessory | 7511 | All accessories |
 | Product Archive | 7658 | `/mats/`, `/accessories-frames/`, mat category archives |
-| Case Study | 7695 | 20 project pages, each added to its display conditions |
+| Case Study | 7695 | Project pages, each added to its display conditions |
 | Text Page | 7763 | Logo Mats Old and other plain text pages |
 | Single Post / Blog Archive / Search / 404 | 7662 / 7659 / 7660 / 7661 | Blog and system pages |
 
@@ -77,4 +77,5 @@ The other pages have their own Elementor layouts: Home, Products, the category p
 - **After style changes**, clear the Elementor cache (Elementor → Tools → Clear Files & Data).
 - **Modifier classes must sit above their base class.** In Elementor's class list, modifiers such as `tmc-btn-primary` have to come before `tmc-btn`.
 - **New project page**: create the page, turn on *Project case study*, and add it to the Case Study template's display conditions. To list it on the Projects page, add it to that page's loop.
-- **Redirects that match live**: `/contact-us/` → `/project-enquiry-form/`, `/homepage/` → `/`. Old author archives and empty categories also redirect.
+- **Redirects**: `/contact-us/` → `/project-enquiry-form/` and `/homepage/` → `/` (both as on live). `/clayton-cork/` and `/the-masonry/` → `/centreparcs/`, because on live both showed the Center Parcs case study; they are kept as pages but set to noindex. Old author archives and empty categories also redirect.
+- **About Us** is published but not linked from the menus, as on live.

@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- About Us removed from the footer menu (it is not linked on live). The homepage About button now links to Services.
+- `/clayton-cork/` and `/the-masonry/` redirect to `/centreparcs/` and are set to noindex; removed from the Projects list.
+- Mat Finder category is now A–F tick boxes instead of free text.
+
 ## 1.0.0 — 2026-11-05
 
 This is the first version of the revamp, running on the local site.

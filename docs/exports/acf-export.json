@@ -339,8 +339,8 @@
                 "label": "Mat Finder category",
                 "name": "tmc_mat_finder",
                 "aria-label": "",
-                "type": "text",
-                "instructions": "e.g. A & C",
+                "type": "checkbox",
+                "instructions": "Tick every Mat Finder square this mat should appear in. Zone 1 = outside the door, Zone 2 = just inside, Zone 3 = lobby and beyond.",
                 "required": false,
                 "conditional_logic": false,
                 "wrapper": {
@@ -348,11 +348,25 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "",
+                "default_value": [],
                 "maxlength": "",
                 "placeholder": "",
                 "prepend": "",
-                "append": ""
+                "append": "",
+                "choices": {
+                    "A": "A · Zone 1, heavy traffic",
+                    "B": "B · Zone 1, moderate traffic",
+                    "C": "C · Zone 2, heavy traffic",
+                    "D": "D · Zone 2, moderate traffic",
+                    "E": "E · Zone 3, heavy traffic",
+                    "F": "F · Zone 3, moderate traffic"
+                },
+                "layout": "vertical",
+                "return_format": "value",
+                "allow_custom": 0,
+                "save_custom": 0,
+                "toggle": 0,
+                "custom_choice_button_text": "Add new choice"
             },
             {
                 "key": "field_tmc_tab_2",

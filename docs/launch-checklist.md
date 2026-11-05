@@ -11,7 +11,6 @@ Code and content are moved separately:
 - [ ] Export the Redirection rules (JSON) from live, if it has any.
 - [ ] Check the live site's Code Snippets plugin and either port or drop each snippet.
 - [ ] Check the live site's Complianz settings and GTM / analytics IDs.
-- [ ] Get sign-off on the open content items: About Us copy, the Solutions page (supplier and price are public), and the Clayton Cork and The Masonry pages (both show Center Parcs content on live).
 
 ## Go live
 
@@ -29,6 +28,6 @@ Code and content are moved separately:
 - [ ] Run Elementor → Tools → Clear Files & Data, and purge the host cache.
 - [ ] Check that the Site Guide shows all green.
 - [ ] Submit each of the 6 forms and confirm the emails arrive at office@themattingcompany.ie.
-- [ ] Test some old URLs, including `/contact-us/`, `/homepage/` and a category such as `/blog-post/`.
+- [ ] Test some old URLs, including `/contact-us/`, `/homepage/`, `/clayton-cork/` and a category such as `/blog-post/`.
 - [ ] Confirm tags fire only after the cookie banner is accepted (use Tag Assistant).
 - [ ] Submit the sitemap in Google Search Console.
