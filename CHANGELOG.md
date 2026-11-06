@@ -7,6 +7,7 @@
 - Mat Finder category is now A–F tick boxes instead of free text.
 - Site Guide is now its own teal menu item at the top of the admin menu.
 - Favicon set to the live "M" icon. Yoast: default and homepage share image (Cleanmid, as on live), large Twitter card, Instagram and LinkedIn profiles.
+- Styling fixes: file upload fields show in full with a styled button; technical tables have cleaner borders and mobile cards; eyebrow pills have a stronger background and a border.
 
 ## 1.0.0 — 2026-11-05
 
