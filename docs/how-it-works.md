@@ -12,7 +12,7 @@ flowchart LR
 
 ## Where things are managed
 
-Everything is set in the dashboard. **Dashboard → Site Guide** shows this same map, with links and status checks.
+Everything is set in the dashboard. The **Site Guide** (the teal item at the top of the admin menu) shows this same map, with links and status checks.
 
 | What | Where |
 |---|---|
@@ -29,6 +29,8 @@ Everything is set in the dashboard. **Dashboard → Site Guide** shows this same
 | SEO titles, descriptions, sitemaps | Yoast SEO |
 | Redirects | Tools → Redirection |
 | Cookie banner | Complianz |
+| Favicon | Settings → General → Site Icon (the live "M" icon) |
+| Social share images and profiles | Yoast SEO → Settings → Site representation and Social. The default share image is Cleanmid, as on live; each page can set its own in the Yoast box. |
 | Custom code | Code Snippets (WPCode), snippets named "TMC: …" |
 
 ## Content model

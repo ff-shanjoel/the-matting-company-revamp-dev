@@ -13,7 +13,7 @@ WPCode must stay active. If it is deactivated, everything below stops, including
 | TMC: Mat Finder | PHP | Everywhere | On the Mat Finder page, lists the mats whose Mat Finder category contains the clicked letter (A–F). |
 | TMC: Technical Table | PHP | Everywhere | The filterable mat table on Technical Information, and the version with supplier and price on Solutions. |
 | TMC: Form Spam Protection | PHP | Everywhere | Checks the hidden form fields (see below). |
-| TMC: Site Guide | PHP | Admin only | The read-only Site Guide page under Dashboard. |
+| TMC: Site Guide | PHP | Admin only | The read-only Site Guide page: the teal item at the top of the admin menu, above Dashboard. |
 
 An exported copy of all snippets is in [`exports/wpcode-snippets.json`](exports/wpcode-snippets.json). It is a backup only; nothing loads it.
 

@@ -5,6 +5,8 @@
 - About Us removed from the footer menu (it is not linked on live). The homepage About button now links to Services.
 - `/clayton-cork/` and `/the-masonry/` redirect to `/centreparcs/` and are set to noindex; removed from the Projects list.
 - Mat Finder category is now A–F tick boxes instead of free text.
+- Site Guide is now its own teal menu item at the top of the admin menu.
+- Favicon set to the live "M" icon. Yoast: default and homepage share image (Cleanmid, as on live), large Twitter card, Instagram and LinkedIn profiles.
 
 ## 1.0.0 — 2026-11-05
 

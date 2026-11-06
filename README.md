@@ -41,7 +41,7 @@ The `.gitignore` is an allow-list, so nothing else is tracked:
    ```
 
 3. Run **Elementor → Tools → Clear Files & Data**.
-4. Open **Dashboard → Site Guide** and check that its status checks are green.
+4. Open **Site Guide**, the teal item at the top of the admin menu, and check that its status checks are green.
 
 On Local, outgoing email is caught by Mailpit (Local → Tools).
 
