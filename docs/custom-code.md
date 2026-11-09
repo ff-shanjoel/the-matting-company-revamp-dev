@@ -13,6 +13,7 @@ WPCode must stay active. If it is deactivated, everything below stops, including
 | TMC: Mat Finder | PHP | Everywhere | On the Mat Finder page, lists the mats whose Mat Finder category contains the clicked letter (A–F). |
 | TMC: Technical Table | PHP | Everywhere | The filterable mat table on Technical Information, and the version with supplier and price on Solutions. |
 | TMC: Form Spam Protection | PHP | Everywhere | Checks the hidden form fields (see below). |
+| TMC: Form Auto-Replies and Redirects | PHP | Everywhere | Like the live forms: Project enquiry sends the visitor a thank-you email; Construction BOQ goes to /thank-you/ after sending. Forms are matched by their Form name. |
 | TMC: Site Guide | PHP | Admin only | The read-only Site Guide page: the teal item at the top of the admin menu, above Dashboard. |
 
 An exported copy of all snippets is in [`exports/wpcode-snippets.json`](exports/wpcode-snippets.json). It is a backup only; nothing loads it.
@@ -27,7 +28,7 @@ Elementor V4 has no shortcode widget, so the code connects in three ways:
 
 ## Form spam protection
 
-There are six Elementor forms: Home, Contact, Project Enquiry, ModuMat, Construction Projects and Entrance Matting Specialist. All send to office@themattingcompany.ie. Protection works without a captcha.
+There are six Elementor forms: Home, Contact, Project Enquiry, ModuMat, Construction Projects and Entrance Matting Specialist. Recipients, CC and BCC match the live site; change them in each form's Email settings in Elementor. Protection works without a captcha.
 
 Each form contains a hidden **Spam Trap** block with two fields:
 

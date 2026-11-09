@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Go-live prep matching live: 5 more live redirects; Complianz banner set up like live (GTM entered, paused); form recipients, Project Enquiry auto-reply and Construction redirect as live; FluentSMTP, UpdraftPlus and WP-Optimize installed inactive.
 - About Us removed from the footer menu (it is not linked on live). The homepage About button now links to Services.
 - `/clayton-cork/` and `/the-masonry/` redirect to `/centreparcs/` and are set to noindex; removed from the Projects list.
 - Mat Finder category is now A–F tick boxes instead of free text.

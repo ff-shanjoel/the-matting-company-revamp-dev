@@ -88,5 +88,20 @@
         "code_type": "php",
         "priority": 10,
         "active": true
+    },
+    {
+        "id": 7798,
+        "title": "TMC: Form Auto-Replies and Redirects",
+        "code": "/**\n * TMC: Form Auto-Replies and Redirects\n * Matches what the live forms did:\n *  - Auto-reply: after the \"Project enquiry\" form sends its notification, the visitor\n *    gets a thank-you email (same text as the live site).\n *  - Redirect: after the \"Construction BOQ\" form succeeds, the visitor goes to /thank-you/.\n * Forms are matched by their Form name in Elementor. Edit the lists below to change them.\n */\nif (!function_exists('tmc_form_autoreplies')) {\n\n\tfunction tmc_form_autoreplies() {\n\t\treturn [\n\t\t\t'Project enquiry' => [\n\t\t\t\t'subject' => 'The Matting Company - Thank you for your enquiry',\n\t\t\t\t'from'    => 'The Matting Company <office@themattingcompany.ie>',\n\t\t\t\t'body'    => '<p>Thank you for getting in touch with The Matting Company about your project.</p>'\n\t\t\t\t\t. '<p>We have received your enquiry. Our team will review the details and respond shortly.</p>'\n\t\t\t\t\t. '<p>If you require assistance sooner, please contact us directly on +353 62 86578 or 087 446 2935.</p>'\n\t\t\t\t\t. '<p>Kind regards,<br>The Matting Company</p>'\n\t\t\t\t\t. '<p style=\"color:#56657A;font-size:12px\">This email is a receipt for your contact form submission on our website ({site}) in which your email address was used. If that was not you, please ignore this message.</p>',\n\t\t\t],\n\t\t];\n\t}\n\n\tfunction tmc_form_redirects() {\n\t\treturn ['Construction BOQ' => '/thank-you/'];\n\t}\n\n\tfunction tmc_form_name($widget_settings) {\n\t\t$n = $widget_settings['form-name'] ?? '';\n\t\tif (is_array($n)) $n = $n['value'] ?? '';\n\t\treturn trim(html_entity_decode((string) $n, ENT_QUOTES));\n\t}\n\n\t// The notification email is built once per submission; send the auto-reply alongside it.\n\tadd_filter('elementor_pro/atomic_forms/email_message', function ($message, $form_data = [], $widget_settings = []) {\n\t\tstatic $sent = [];\n\t\t$name = tmc_form_name((array) $widget_settings);\n\t\t$replies = tmc_form_autoreplies();\n\t\tif (!isset($replies[$name]) || isset($sent[$name])) return $message;\n\t\t$to = '';\n\t\tforeach ((array) $form_data as $value) {\n\t\t\tif (is_string($value) && is_email(trim($value))) { $to = trim($value); break; }\n\t\t}\n\t\tif (!$to) return $message;\n\t\t$sent[$name] = true;\n\t\t$r = $replies[$name];\n\t\t$body = str_replace('{site}', esc_html(get_bloginfo('name') . ' ' . home_url('/')), $r['body']);\n\t\twp_mail($to, $r['subject'], $body, ['Content-Type: text/html; charset=UTF-8', 'From: ' . $r['from']]);\n\t\treturn $message;\n\t}, 30, 3);\n\n\tadd_action('wp_footer', function () {\n\t\t$map = tmc_form_redirects();\n\t\tif (!$map) return;\n\t\t?>\n\t\t<script>\n\t\t(function () {\n\t\t\tvar map = <?php echo wp_json_encode(array_map('home_url', $map)); ?>;\n\t\t\tdocument.querySelectorAll('form[data-form-name]').forEach(function (form) {\n\t\t\t\tvar url = map[form.getAttribute('data-form-name')];\n\t\t\t\tif (!url) return;\n\t\t\t\tnew MutationObserver(function () {\n\t\t\t\t\tif (form.classList.contains('form-state-success')) setTimeout(function () { window.location.href = url; }, 800);\n\t\t\t\t}).observe(form, { attributes: true, attributeFilter: ['class'] });\n\t\t\t});\n\t\t})();\n\t\t</script>\n\t\t<?php\n\t}, 40);\n}\n",
+        "note": "Like the live forms: Project enquiry sends the visitor a thank-you email; Construction BOQ redirects to /thank-you/ after sending. Forms are matched by Form name.",
+        "tags": [
+            "the-matting-company"
+        ],
+        "location": "everywhere",
+        "auto_insert": 1,
+        "insert_number": 1,
+        "code_type": "php",
+        "priority": 10,
+        "active": true
     }
 ]
